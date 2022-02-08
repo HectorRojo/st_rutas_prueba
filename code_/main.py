@@ -56,7 +56,7 @@ def main():
     st.image(image, caption='Soluciones Última Milla')
 
     st.sidebar.subheader('Indique Latitud y Longitud de su CEDIS')
-    st.text('La ubicacion qué se utiliza cómo CEDIS, por default es la de la Glorieta de la Minerva')      
+    st.text('La ubicación qué se utiliza cómo CEDIS, por default es la de la Glorieta de la Minerva')      
     latitud = st.sidebar.number_input(label='Latitud',value=20.6744485)
     longitud = st.sidebar.number_input(label='Longitud',value=-103.3873984)
 
