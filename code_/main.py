@@ -32,8 +32,6 @@ def main():
     def seleccionar_municipio(municipio):
         ## Selecting Zapopan to work with this data only and filtering by Activities that include Abarrotes  
         df_municipio = df.loc[df['municipio']==municipio]
-        # df_municipio = df_municipio.loc[(df_municipio['Actividad']=='Comercio al por mayor de abarrotes') | (df_municipio['Actividad']=='Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas')]
-        # df_zapopan['numero_ext'] = df_zapopan['numero_ext'].astype('int')
         df_municipio['numero_ext'] = df_municipio['numero_ext'].fillna(0)
         df_municipio['numero_ext'] = df_municipio['numero_ext'].astype('int')  
         ## Checking Zapopan´s DataFrame information (Number of records and Data Types)
@@ -48,7 +46,7 @@ def main():
 
     # Streamlit iniziation
     st.set_page_config(page_title='Rutas Última Milla',layout='centered',page_icon=':car:')
-    st.title('Rutas Ultima Milla')
+    st.title('Rutas Última Milla')
     st.subheader('DEMO')
     
     url = 'https://raw.githubusercontent.com/HectorRojo/st_rutas_prueba/main/code_/Logistica1.png'
