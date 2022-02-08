@@ -48,7 +48,7 @@ def main():
     st.title('Rutas Ultima Milla')
     st.subheader('DEMO')
 
-    image = Image.open('https://raw.githubusercontent.com/HectorRojo/st_rutas_prueba/main/code_/Logistica1.png')
+    image = Image.open('/Logistica1.png')
     st.image(image, caption='Soluciones Última Milla')
 
     st.sidebar.subheader('Indique Latitud y Longitud de su CEDIS')
