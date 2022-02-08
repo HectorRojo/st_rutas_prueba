@@ -42,7 +42,7 @@ municipios = sorted(df['municipio'].unique())
 # Streamlit iniziation
 st.set_page_config(page_title='Rutas Última Milla',layout='centered',page_icon=':car:')
 st.title('Rutas Ultima Milla')
-image = Image.open('\Logistica.png')
+image = Image.open('/st_rutas_prueba/edit/main/Logistica.png')
 st.image(image, caption='Soluciones Última Milla')
 
 st.sidebar.subheader('Indique Latitud y Longitud de su CEDIS')      
