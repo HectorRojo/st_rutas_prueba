@@ -1,7 +1,4 @@
 #importando Librerias
-
-from functools import cache
-from turtle import color
 import streamlit as st
 import pandas as pd
 import numpy as np
