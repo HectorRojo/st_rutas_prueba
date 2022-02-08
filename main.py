@@ -43,7 +43,7 @@ municipios = sorted(df['municipio'].unique())
 st.set_page_config(page_title='Rutas Última Milla',layout='centered',page_icon=':car:')
 st.title('Rutas Ultima Milla')
 st.subheader('DEMO')
-image = Image.open('Logistica1.PNG')
+image = Image.open('https://github.com/HectorRojo/st_rutas_prueba/blob/main/Logistica1.png')
 st.image(image, caption='Soluciones Última Milla')
 
 st.sidebar.subheader('Indique Latitud y Longitud de su CEDIS')      
